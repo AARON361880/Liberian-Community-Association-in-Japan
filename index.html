@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberian Community Association in Japan (LCAJ)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module">
+        import * as lucide from 'https://cdn.jsdelivr.net/npm/lucide@latest';
+        const { createIcons, Smile, Users, Calendar, Mail, Home, Phone } = lucide;
+        createIcons({ icons: { Smile, Users, Calendar, Mail, Home, Phone } });
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f7f9fc; }
+        .text-liberia-blue { color: #000080; }
+        .bg-liberia-blue { background-color: #000080; }
+        .text-liberia-red { color: #CF142B; }
+        .bg-liberia-red { background-color: #CF142B; }
+        .shadow-lg-custom { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+    </style>
+</head>
+<body class="text-gray-800">
+    <header class="sticky top-0 z-50 bg-white shadow-lg-custom p-4">
+        <div class="container mx-auto flex justify-between items-center max-w-7xl">
+            <div class="flex items-center space-x-2">
+                <i data-lucide="smile" class="text-liberia-red w-7 h-7"></i>
+                <span class="text-xl font-extrabold text-liberia-blue tracking-tight">LCAJ</span>
+            </div>
+            <button id="menu-button" class="md:hidden p-2 rounded-lg text-liberia-blue hover:bg-gray-100">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+            <nav class="hidden md:flex space-x-6 font-medium">
+                <a href="#home" class="text-gray-600 hover:text-liberia-red p-2">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-liberia-red p-2">About Us</a>
+                <a href="#events" class="text-gray-600 hover:text-liberia-red p-2">Events</a>
+                <a href="#contact" class="bg-liberia-blue text-white px-4 py-2 rounded-full hover:bg-opacity-90 shadow-md">Join Us</a>
+            </nav>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+            <a href="#home" class="block text-gray-700 hover:bg-gray-100 p-3 rounded-lg flex items-center"><i data-lucide="home" class="w-5 h-5 mr-2"></i> Home</a>
+            <a href="#about" class="block text-gray-700 hover:bg-gray-100 p-3 rounded-lg flex items-center"><i data-lucide="users" class="w-5 h-5 mr-2"></i> About Us</a>
+            <a href="#events" class="block text-gray-700 hover:bg-gray-100 p-3 rounded-lg flex items-center"><i data-lucide="calendar" class="w-5 h-5 mr-2"></i> Events</a>
+            <a href="#contact" class="block bg-liberia-red text-white p-3 rounded-lg text-center font-semibold mt-2">Join Us Today</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 max-w-7xl">
+                <div class="flex flex-col md:flex-row items-center gap-10">
+                    <div class="md:w-1/2 text-center md:text-left">
+                        <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight text-liberia-blue">Connecting Liberia in the Land of the Rising Sun.</h1>
+                        <p class="text-lg md:text-xl text-gray-600 mb-8">The official association dedicated to fostering unity, promoting cultural exchange, and supporting the Liberian diaspora across Japan.</p>
+                        <a href="#events" class="inline-flex items-center bg-liberia-red text-white text-lg font-semibold px-8 py-3 rounded-full hover:bg-red-700 shadow-xl transform hover:scale-105">
+                            See Upcoming Events <i data-lucide="calendar" class="w-5 h-5 ml-2"></i>
+                        </a>
+                    </div>
+                    <div class="md:w-1/2 w-full mt-8 md:mt-0">
+                        <img src="https://placehold.co/800x500/000080/FFFFFF?text=LCAJ+Unity+in+Japan" alt="Unity" class="w-full h-auto rounded-xl shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6 max-w-7xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-liberia-blue mb-12">Our Mission & Values</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-liberia-red">
+                        <i data-lucide="users" class="text-liberia-blue w-10 h-10 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-3">Community Unity</h3>
+                        <p class="text-gray-600">We strive to create a strong, supportive network where every Liberian in Japan feels connected.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-liberia-blue">
+                        <i data-lucide="smile" class="text-liberia-red w-10 h-10 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-3">Cultural Preservation</h3>
+                        <p class="text-gray-600">We actively promote and preserve Liberian heritage, traditions, and dialects.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-liberia-red">
+                        <i data-lucide="mail" class="text-liberia-blue w-10 h-10 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-3">Welfare & Support</h3>
+                        <p class="text-gray-600">Providing necessary assistance and resources to members navigating life in Japan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 max-w-7xl text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-liberia-blue mb-12">Upcoming Events</h2>
+                <div class="max-w-4xl mx-auto bg-gray-100 p-6 rounded-xl shadow-md flex flex-col md:flex-row">
+                    <div class="md:w-1/4 mb-4 md:mb-0">
+                        <p class="text-4xl font-extrabold text-liberia-red">28</p>
+                        <p class="text-lg font-semibold text-gray-600">Dec 2025</p>
+                    </div>
+                    <div class="md:w-3/4 md:pl-6 md:border-l border-gray-300 text-left">
+                        <h3 class="text-2xl font-bold text-liberia-blue mb-2">General Elections & Year-End Program</h3>
+                        <p class="text-gray-700">Participate in our democratic process and join the community celebration.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 md:py-24 bg-liberia-blue text-white">
+            <div class="container mx-auto px-6 max-w-5xl text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Join LCAJ Today</h2>
+                <p class="text-lg mb-12 opacity-90">Get connected with the Liberian community in Japan.</p>
+                <div class="bg-white p-8 rounded-xl text-gray-800 shadow-2xl">
+                    <p class="mb-4">Contact us directly:</p>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <div class="p-4 bg-gray-50 rounded-lg flex items-center shadow-sm">
+                            <i data-lucide="mail" class="text-liberia-red mr-2"></i> info@lcajapan.org
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg flex items-center shadow-sm">
+                            <i data-lucide="phone" class="text-liberia-red mr-2"></i> +81 (0) 90 1234 5678
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 text-center">
+        <p class="text-sm">&copy; 2025 Liberian Community Association in Japan (LCAJ). All rights reserved.</p>
+    </footer>
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    </script>
+</body>
+</html>
